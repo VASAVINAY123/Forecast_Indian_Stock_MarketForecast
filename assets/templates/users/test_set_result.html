@@ -1,0 +1,61 @@
+{% extends 'users/userbase.html' %}
+
+{% block title %}
+    Classifications
+{% endblock %}
+{% block user_home %}
+active
+{% endblock %}
+
+{% block content %}
+
+ <section id="intro">
+
+    <div class="intro-text">
+<!--        <div class="container" style="margin-top:-200px;">-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br/><br/>
+      <p><h3 align="center" style="color:green;font-weight:bold;">Test Set.....</h3></p>
+      <!--<a href="#about" class="btn-get-started scrollto">Get Started</a>-->
+        <center>
+          <table class="table">
+            <tr>
+                <th>S.NO</th>
+                <th>Algorithm</th>
+                <th>Error Rating</th>
+                <th>Standard Derivation</th>
+
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Random forest</td>
+                <td>{{rf.rf_error_rate}}</td>
+                <td>{{rf.rf_std}}</td>
+            </tr>
+<tr>
+                <td>2</td>
+                <td>Support vector machine</td>
+                <td>{{svm.svm_error_rate}}</td>
+                <td>{{svm.svm_std}}</td>
+            </tr>
+              <tr>
+                <td>3</td>
+                <td>Decision tree</td>
+                <td>{{dt.dt_error_rate}}</td>
+                <td>{{dt.dt_std}}</td>
+            </tr><tr>
+                <td>4</td>
+                <td>Gradient Boosted Trees</td>
+                <td>{{gbr.gbr_error_rate}}</td>
+                <td>{{gbr.gbr_std}}</td>
+            </tr>
+              <tr>
+                <td>5</td>
+                <td>Linear Regression</td>
+                <td>{{lr.lr_error_rate}}</td>
+                <td>{{lr.lr_std}}</td>
+            </tr>
+          </table>
+        </center>
+    </div>
+  </section>
+{%endblock%}

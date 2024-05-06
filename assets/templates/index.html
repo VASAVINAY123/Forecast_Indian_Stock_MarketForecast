@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title> Forecast Indian Stock Market</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'main_static/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'main_static/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'main_static/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'main_static/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'main_static/css/style.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+        <h1 class="logo"><a href="/">Stock <span class="text-danger">Market</span> </a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!--  <a href="index.html" class="logo"><img src="{% static 'main_static/img/logo.png' %}" alt="" class="img-fluid"></a> -->
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'UserLogin' %}">Users</a></li>
+                <li><a class="nav-link scrollto" href="{% url 'AdminLogin' %}">Admin</a></li>
+
+                <li><a class="getstarted scrollto" href="{% url 'UserRegister' %}"> Register</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active"
+                 style="background-image: url({% static 'main_static/img/slide/slide1.jpg' %})">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Forecast <span>Indian Stock Market</span></h2>
+                        <p class="animate__animated animate__fadeInUp">Comparative Analysis of Machine Learning
+                            Algorithm to Forecast Indian Stock Market.
+                        </p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url({% static 'main_static/img/slide/slide2.jpg' %})">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Forecast Indian Stock Market</h2>
+                        <p class="animate__animated animate__fadeInUp">Comparative Analysis of Machine Learning
+                            Algorithm to Forecast Indian Stock Market.</p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url({% static 'main_static/img/slide/slide-3.jpg' %})">
+                <div class="carousel-container">
+                    <div class="container">
+                        <h2 class="animate__animated animate__fadeInDown">Forecast Indian Stock Market</h2>
+                        <p class="animate__animated animate__fadeInUp"> Comparative Analysis of Machine Learning
+                            Algorithm to Forecast Indian Stock Market
+                        </p>
+                        <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
+                            More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+    </div>
+</section><!-- End Hero -->
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>About</h2>
+                <p>Abstract</p>
+            </div>
+
+            <div class="row content">
+                <div class="col-lg-6" style="text-align: justify">
+                    <p>
+                        Complexity and diversity of the stock market has always attracted the researchers since ages to
+                        find out the ways to predict the future movement. However, the volatility across the globe in
+                        different stock markets makes this task more difficult.
+                    </p>
+                    <ul>
+                        <li><i class="ri-check-double-line"></i> Statistical methods and modelling are
+                            effective but can't address the vast range of problems encountered in the prediction of
+                            movement
+                            of the stock market.
+                        </li>
+                        <li><i class="ri-check-double-line"></i> The traditional methods used were not able to address
+                            and give solution to
+                            the complex problems prevailing in the stock market.
+                        </li>
+                        <li><i class="ri-check-double-line"></i> The machine learning and artificial
+                            intelligence tools are used to solve the complex situations and problems of Big Data with
+                            ease.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0" style="text-align: justify">
+                    <p>
+                        In this paper authors propose to use six different algorithms i.e., Generalized Linear Model,
+                        Deep Learning, Decision Tree, Random Forest, Gradient Boosted Trees and Support Vector Machine
+                        and identify model which predict near to actuals. These algorithms were applied on the BSE index
+                        data from April 2015 to 31st March 2020 and the model with least relative error is identified.
+                        Amongst all the models applied, Gradient Boosted Trees is chosen to be the efficient one, as it
+                        has least relative error and standard deviation. Further Gradient Boosted Trees is used to
+                        forecast the results
+                    </p>
+                    <a href="#" class="btn-learn-more">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>F.A.Q</h2>
+                <p>Frequently Asked Questions</p>
+            </div>
+
+            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-5">
+                    <i class="bx bx-help-circle"></i>
+                    <h4>Can I trade when markets are closed or shut down?</h4>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        You cannot trade after the market is closed or shut down. Even though trading no more requires
+                        physical presence it isn’t possible to trade after the market is shut down. You can only trade
+                        between 09:15 am to 3:30 pm, however many passive investors trade after trading hours. The
+                        orders placed after trading hours are called AMO or After Market Orders and they sometimes
+                        create a volatile market. AMO also causes price fluctuations in the share price.
+                    </p>
+                </div>
+            </div><!-- End F.A.Q Item-->
+
+            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-lg-5">
+                    <i class="bx bx-help-circle"></i>
+                    <h4> How many Sectors are there to invest in Stock Market?</h4>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        You can invest in 11 different sectors in the stock market. This type of industry categorization
+                        helps the portfolio manager create a diverse portfolio and allocate funds more efficiently.
+                    </p>
+                </div>
+            </div><!-- End F.A.Q Item-->
+
+            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-5">
+                    <i class="bx bx-help-circle"></i>
+                    <h4>Is there any time for buying shares or doing a trade?</h4>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        Yes, you can only trade between 09:15 am to 3:30 pm on weekdays. But you can place AMO type of
+                        orders after these trading hours.
+
+                    </p>
+                </div>
+            </div><!-- End F.A.Q Item-->
+
+            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-5">
+                    <i class="bx bx-help-circle"></i>
+                    <h4>Is it safe to invest in Unlisted Stocks as a beginner?</h4>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        Many traders have stock market questions related to unlisted stocks. Investing in unlisted
+                        stocks requires expertise and sound knowledge of the stocks. Beginners often lack this knowledge
+                        and can incur losses. But if your firm about the future growth of the company only then you can
+                        think of investing in unlisted stocks.
+                    </p>
+                </div>
+            </div><!-- End F.A.Q Item-->
+
+            <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-lg-5">
+                    <i class="bx bx-help-circle"></i>
+                    <h4> How to find good companies as there are many publicly listed companies in the Indian stock
+                        market?
+                    </h4>
+                </div>
+                <div class="col-lg-7">
+                    <p>
+                        You can find many online tools to find good stocks. You can use the stock screener to find good
+                        stocks from the pool of all the companies listed on the stock exchange. You can use different
+                        filters like valuations, the market cap of the company, so on.
+                    </p>
+                </div>
+            </div><!-- End F.A.Q Item-->
+
+        </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+        <div class="copyright">
+            &copy; Copyright <strong><span>STOCK</span> MARKET</strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
+            Designed by <a href="">Alex Corporation</a>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="{% static 'main_static/vendor/aos/aos.js' %}"></script>
+<script src="{% static 'main_static/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'main_static/vendor/glightbox/js/glightbox.min.js' %}"></script>
+<script src="{% static 'main_static/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+<script src="{% static 'main_static/vendor/php-email-form/validate.js' %}"></script>
+<script src="{% static 'main_static/vendor/purecounter/purecounter.js' %}"></script>
+<script src="{% static 'main_static/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+<!-- Template Main JS File -->
+<script src="{% static 'main_static/' %}js/main.js"></script>
+
+</body>
+
+</html>
